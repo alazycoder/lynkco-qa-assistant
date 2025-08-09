@@ -1,0 +1,1 @@
+# lynkco-qa-assistant
