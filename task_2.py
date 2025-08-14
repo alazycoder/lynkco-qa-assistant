@@ -8,9 +8,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from score import ScoreModel
 
 
-model_name = "meta-llama/Llama-2-7b-chat-hf"
-torch_type = torch.float32
-batch_size = 1
+model_name = "baichuan-inc/Baichuan2-7B-Chat"
+torch_type = torch.float16
+batch_size = 2
 gpus = "0,1"
 max_new_tokens = 60
 

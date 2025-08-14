@@ -60,6 +60,21 @@ float16 比 float32，显存少用 50%，速度提升一倍
 - Llama float16 0.3147 306s
 - Llama float32 0.3145 856s
 
+2 卡推理和 8 卡推理时的延迟差别大吗？
+
+- Baichuan float32 batch_size=1 2GPUs 1516s 0.5259
+- Baichuan float32 batch_size=1 8GPUs 2404s 0.5259
+
+## Task 3
+
+使用 Lora 微调
+
+2 epoch, 7.2hours, batch size = 4 x 4
+
+- llama 0.3145 -> 0.3486
+- baichuan 0.5259 -> 0.7190
+- qwen 0.2410
+
 ## GPU Metric 可视化
 
 ```
